@@ -1,7 +1,7 @@
 Package: sitsdata
 Type: Package
 Title: Data sets to support examples in sits package
-Version: 0.4.2
+Version: 0.4.3
 Date: 2022-09-07
 Authors@R: c(person('Gilberto', 'Camara', role = c('aut', 'cre'), email = 'gilberto.camara@inpe.br'), 
              person('Rolf', 'Simoes', role = c('aut'), email = 'rolf.simoes@inpe.br'))
