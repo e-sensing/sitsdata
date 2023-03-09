@@ -1,0 +1,15 @@
+citHeader("To cite SITS in publications use:")
+citEntry(entry = "Misc",
+         title        = "Data sets for the sits package",
+         author       = personList(as.person("Gilberto Camara"),
+                                   as.person("Rolf Simoes")),
+         organization = "INPE - Brazilian National Institute for Space Research",
+         address      = "Sao Jose dos Campos, Brazil",
+         year         = "2021",
+         url          = "https://github.com/e-sensing/sits-data",
+         header       = "To cite sitsdata in publications use:",
+         textVersion  =
+             paste("Camara, Gilberto; Simoes, Rolf (2018).",
+                   "Land cover time series samples for the sits package",
+                   "URL https://github.com/e-sensing/sits-data.")
+)

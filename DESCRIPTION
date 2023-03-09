@@ -1,0 +1,25 @@
+Package: sitsdata
+Type: Package
+Title: Data sets to support examples in sits package
+Version: 0.4.2
+Date: 2022-09-07
+Authors@R: c(person('Gilberto', 'Camara', role = c('aut', 'cre'), email = 'gilberto.camara@inpe.br'), 
+             person('Rolf', 'Simoes', role = c('aut'), email = 'rolf.simoes@inpe.br'))
+Maintainer: Gilberto Camara <gilberto.camara@inpe.br>
+Description: This project contains in situ data sets used in the sits package. 
+    These data sets consists of time series of selected locations 
+    which are used to train the statistical learning models used 
+    in demos of the sits package.
+Depends: R (>= 4.0)
+URL: https://github.com/e-sensing/sitsdata/
+BugReports: https://github.com/e-sensing/sitsdata/issues
+License: GPL-2 | file LICENSE
+Imports: 
+    tibble
+ByteCompile: true
+LazyData: true
+Encoding: UTF-8
+Collate: 
+    'data.R'
+    'zzz.R'
+RoxygenNote: 7.1.1

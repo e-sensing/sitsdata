@@ -1,0 +1,3 @@
+cerrado_classification     Reproduce paper "Satellite Image Time Series Analysis for Big Earth ObservationData"
+ml_comparison              Do cross-validations on a different machine learning models and compare them
+rondonia_s2_deforestation_bdc Script to detect deforestation on Sentinel-2 image over an area in Amazonia
