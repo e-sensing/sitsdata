@@ -175,13 +175,13 @@ License: Creative Commons Attribution 4.0 International (CC BY 4.0).
 
 ### LULC classification using Landsat-8 for the Brazilian Cerrado
 
-A data cube containing classified images of a Landsat-8 data cube for the Brazilian Cerrado biome, as described in the paper by Simoes et al. (2021). The actual files are provided by a dropbox link.  
+A data cube containing classified images of a Landsat-8 data cube for the Brazilian Cerrado biome, as described in the paper by Simoes et al. (2021).  
 
 Reference: Simoes, Rolf, Gilberto Camara, Gilberto Queiroz, Felipe Souza, Pedro R. Andrade, Lorena Santos, Alexandre Carvalho, and Karine Ferreira. 2021. "Satellite Image Time Series Analysis for Big Earth Observation Data" Remote Sensing 13, no. 13: 2428. https://doi.org/10.3390/rs13132428.
 
 Example: See chapter ["Validation and accuracy measurements"](https://e-sensing.github.io/sitsbook/validation-and-accuracy-measurements.html) in the `sits` [reference book](https://e-sensing.github.io/sitsbook/index.html)
 
-Usage: `readRDS(system.file("extdata/cerrado_classif_dropbox.rds", package = "sitsdata"))`
+Usage: `system.file("extdata/Cerrado", package = "sitsdata")`
 
 License: Creative Commons Attribution 4.0 International (CC BY 4.0).
 
