@@ -151,51 +151,35 @@ NULL
 #' @usage data("samples_validation_cerrado")
 NULL
 
-#' @title Deforestation in Rondonia (Brazil) using SENTINEL-2/2A data
-#'
-#' 
+#' @title Yearly samples of 9 classes on Amazonia biome from Sentinel-2 images
 #' @docType data
-#' @name samples_prodes_4classes.rda
+#' @name samples_deforestation_rondonia
 #' @keywords datasets
+#' @description
+#' A dataset containing a tibble with time series samples from Brazilian
+#' Amazonia biome in the Brazilian state of Rondonia to be used
+#' for deforestation detection.
 #'
-#' @description 
-#' A dataset containing a tibble with 480 times series collected 
-#' over the state of Rondonia (Brasil) for detecting deforestation 
-#' from the period 2020-06-04 to 2021-08-26. 
-#' Each time series contains 8 bands ("B02", "B03", "B04", "B08", "B8A", 
-#' "B11", "B12") and three indices ("NDVI", "EVI", "NBR"), labelled as
-#' 4 classes ("Burned_Area", "Forest", "Highly_Degraded" and "Cleared_Area").
+#' @format
+#' A tibble with 6007 samples, with the following columns:
+#' (a) longitude (East-west coordinate of the time series sample in WGS 84),
+#' (b) latitude (North-south coordinate of the time series sample in WGS 84),
+#' (c) start_date (initial date of the time series),
+#' (d) end_date (final date of the time series),
+#' (e) label (the class label associated to the sample),
+#' (f) cube (the name of image collection associated with the data), and
+#' (g) time_series (list containing a tibble with values of the time series).
 #'
-#' @format 
-#' A \code{sits} tibble with 480 samples.
-#' 
-#'    
-#' @usage data("samples_prodes_4classes")
+#' The samples contain time series for 6007 selected locations which
+#' are assigned to one of the classes "Clear_Cut_Bare_Soil",
+#' "Clear_Cut_Burned_Area", "Mountainside_Forest",
+#' "Forest", "Riparian_Forest", "Clear_Cut_Vegetation",
+#' "Water", "Wetland", and "Seasonally_Flooded".
+#'  Each time series contains values from Sentinel-2/2A
+#'  bands B02, B03, B04, B05, B07, B8A, B08, B11, B12
+#'  and indices NDVI, EVI and NBR 
+#'  from 2022-01-05 to 2022-12-23 in 16-day intervals.
 #'
-NULL
-#'@title Samples of Amazon tropical forest biome for deforestation analysis
-#'
-#' 
-#' @docType data
-#' @name samples_rondonia_s2.rda
-#' @keywords datasets
-#'
-#' @description 
-#' A sits tibble with time series samples from Brazilian Amazonia rain forest.
-#' 
-#' The labels are: "Deforestation", "Forest", "NatNonForest" and "Pasture".
-#' 
-#' The time series were extracted from the Sentinel-2 BDC data cube 
-#' (collection = "S2_10_16D_STK-1", tiles = "077095"). 
-#' These time series comprehends a period of 12 months 
-#' (25 observations) from "2018-07-12" to "2019-07-28".
-#' The extracted bands are NDVI and EVI.
-#' Cloudy values were removed and interpolated.
-#'
-#' @format 
-#' A \code{sits} tibble with 1202 samples.
-#' 
-#'    
-#' @usage data("samples_rondonia_s2")
+#' @usage data("samples_deforestation_rondonia")
 #'
 NULL
