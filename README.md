@@ -74,6 +74,14 @@ Usage: `data("samples_prodes_4classes")`.
 
 License: Creative Commons Attribution 4.0 International (CC BY 4.0).
 
+### Yearly deforestation samples of 11 classes on Amazonia biome from SENTINEL-2/2A images
+
+A dataset containing a tibble with 8064 times series collected over the state of Rondonia (Brasil) for detecting deforestation and degradation from the period 2022-01-05 to 2022-12-23. Each time series contains 10 bands ("B02", "B03", "B04", "B05", "B06", "B07", "B08", "B8A", "B11", "B12") and three indices ("NDVI", "EVI", "NBR") and 11 classes ("Clear_Cut_Bare_Soil", "Clear_Cut_Burned_Area", "Clear_Cut_Trees", "Clear_Cut_Vegetation", "Degradation", "Forest", "Mountainside_Forest", "Riparian_Forest", "Seasonally_Flooded", "Water", "Wetland").
+
+Usage: `data("samples_deforestation_rondonia")`.
+
+License: Creative Commons Attribution 4.0 International (CC BY 4.0).
+
 ### Land Use and Land Cover for Brazilian Cerrado using Landsat-8 OLI
 
 This dataset was produced by a systematic sampling using a grid of 5km x 5km throughout the Cerrado biome, collecting 85,026 samples. The training data labels were extracted from three sources: the pastureland map of 2018 from Pastagem.org, MapBiomas Collection 5 for  2018, and Brazil's National Mapping Agency IBGE maps for 2016-2018. Out of the 85,026 samples, the authors selected those where there was no disagreement between the labels assigned by the three sources. The resulting set had 48,850 points from which the authors extracted time series using a Landsat-8 data cube for year 2018. The distribution of samples for each class is the following: `Annual Crop` (6887), `Cerradao` (4211), `Cerrado` (21,909), `Natural Non Vegetated` (38), `Pasture` (12,894), `Perennial Crop` (68), `Silviculture` (805), `Sugarcane` (1775), and `Water` (263). 
@@ -150,6 +158,15 @@ Usage: `read.csv(system.file("extdata/csv/uganda_crops.csv", package = "sitsdata
 License: Creative Commons Attribution 4.0 International (CC BY 4.0).
 
 ## Image Data cubes used for classification examples
+
+
+### Indices and spectral bands of SENTINEL-2/2A images for the 20LMR tile in Rondonia (Brazil)
+
+This dataset contains 23 TIF files with 3 spectral bands (B02, B8A, and B11) and 3  indices (EVI, NDVI, and NBR) of SENTINEL-2/2A for the period 2022-01-05 to 2022-12-23. These images correspond to tile 20LMR of the MGRS grid. These files with associated timeline are used to test and validate the algorithms in the R package "sits". 
+
+Usage: `system.file("extdata/Rondonia-20LMR", package = "sitsdata")`
+
+License: Creative Commons Attribution 4.0 International (CC BY 4.0).
 
 ### EVI and NDVI MOD13Q1 images for Sinop (Brazil)
 
