@@ -12,7 +12,7 @@ cube (the name of the data cube associated with the time series),
 time_series (list containing a tibble with the values of the time series).
 Each time series comprehends one year of 16-day composites
 from AWFI images, comprising 23 data points and 6 bands
-(blue, green, red, nir, ndvi, evi)
+(BAND13, BAND14,  BAND15, BAND16, NDVI, EVI)
 }
 \usage{
 data("samples_cerrado_cbers")
