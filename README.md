@@ -74,11 +74,11 @@ Usage: `data("samples_prodes_4classes")`.
 
 License: Creative Commons Attribution 4.0 International (CC BY 4.0).
 
-### Yearly deforestation samples of 11 classes on Amazonia biome from SENTINEL-2/2A images
+### Yearly deforestation samples of 9 classes on Amazonia biome from SENTINEL-2/2A images
 
-A dataset containing a tibble with 8064 times series collected over the state of Rondonia (Brasil) for detecting deforestation and degradation from the period 2022-01-05 to 2022-12-23. Each time series contains 10 bands ("B02", "B03", "B04", "B05", "B06", "B07", "B08", "B8A", "B11", "B12") and three indices ("NDVI", "EVI", "NBR") and 11 classes ("Clear_Cut_Bare_Soil", "Clear_Cut_Burned_Area", "Clear_Cut_Trees", "Clear_Cut_Vegetation", "Degradation", "Forest", "Mountainside_Forest", "Riparian_Forest", "Seasonally_Flooded", "Water", "Wetland").
+A dataset containing a tibble with 6007 times series collected over the state of Rondonia (Brasil) for detecting deforestation and degradation from the period 2022-01-05 to 2022-12-23. Each time series contains 3 bands ("B02", "B8A", "B11") and three indices ("NDVI", "EVI", "NBR") and 9 classes ("Clear_Cut_Bare_Soil", "Clear_Cut_Burned_Area", "Clear_Cut_Vegetation", "Forest", "Mountainside_Forest", "Riparian_Forest", "Seasonally_Flooded", "Water", "Wetland").
 
-Usage: `data("samples_deforestation_rondonia")`.
+Usage: `data("samples_deforestation")`.
 
 License: Creative Commons Attribution 4.0 International (CC BY 4.0).
 

@@ -151,9 +151,9 @@ NULL
 #' @usage data("samples_validation_cerrado")
 NULL
 
-#' @title Yearly samples of 11 classes on Amazonia biome from Sentinel-2 images
+#' @title Yearly samples of 9 classes on Amazonia biome from Sentinel-2 images
 #' @docType data
-#' @name samples_deforestation_rondonia
+#' @name samples_deforestation
 #' @keywords datasets
 #' @description
 #' A dataset containing a tibble with time series samples from Brazilian
@@ -172,13 +172,12 @@ NULL
 #'
 #' The samples contain time series for 8064 selected locations which
 #' are assigned to one of the classes: "Clear_Cut_Bare_Soil",
-#' "Clear_Cut_Burned_Area", "Clear_Cut_Trees", "Clear_Cut_Vegetation", 
-#' "Degradation", "Forest", "Mountainside_Forest",
+#' "Clear_Cut_Burned_Area", "Clear_Cut_Vegetation", 
+#'  "Forest", "Mountainside_Forest",
 #' "Riparian_Forest", "Seasonally_Flooded",
 #' "Water", and "Wetland".
 #'  Each time series contains values from Sentinel-2/2A
-#'  bands B02, B03, B04, B05, B07, B8A, B08, B11, B12
-#'  and indices NDVI, EVI and NBR 
+#'  bands B02, B8A, B11, and indices NDVI, EVI and NBR 
 #'  from 2022-01-05 to 2022-12-23 in 16-day intervals.
 #'
 #' @usage data("samples_deforestation_rondonia")
