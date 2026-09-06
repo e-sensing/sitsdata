@@ -127,17 +127,17 @@ extract_polygons_in_roi <- function(gpkg_path,
 # ROI as a bounding box (EPSG:4326):
 # roi <- c(lon_min = -50.78, lat_min = -13.39, lon_max = -50.54, lat_max = -13.25)
 # roi <- c(lat_min = -12.0, lat_max = -11.4, lon_min = -46.0, lon_max = -45.00)
-roi <- c(lat_min = -11.82, lat_max = -11.57, lon_min = -45.75, lon_max = -45.50)
+# roi <- c(lat_min = -11.82, lat_max = -11.57, lon_min = -45.75, lon_max = -45.50)
+# 
+# gpkg_file <- "~/sitsdata/inst/extdata/fields_of_the_world/2024_S12W046.gpkg"
+# 
+# gpkg_file_out <- "~/sitsdata/inst/extdata/fields_of_the_world/SENTINEL-2_FOW_015009_2024-01-01_2024-31-12_segments_v1.gpkg"
 
-gpkg_file <- "~/sitsdata/inst/extdata/fields_of_the_world/2024_S12W046.gpkg"
-
-gpkg_file_out <- "~/sitsdata/inst/extdata/fields_of_the_world/SENTINEL-2_FOW_015009_2024-01-01_2024-31-12_segments_v1.gpkg"
-
-# Keep only polygons fully contained in the ROI, and save the result:
-polys <- extract_polygons_in_roi(
-    gpkg_path = gpkg_file, 
-    roi = roi,
-    predicate = "within", 
-    out_path = gpkg_file_out
-)
+# # Keep only polygons fully contained in the ROI, and save the result:
+# polys <- extract_polygons_in_roi(
+#     gpkg_path = gpkg_file, 
+#     roi = roi,
+#     predicate = "within", 
+#     out_path = gpkg_file_out
+# )
 #

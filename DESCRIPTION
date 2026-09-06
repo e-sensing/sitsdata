@@ -27,4 +27,5 @@ Encoding: UTF-8
 Collate: 
     'data.R'
     'zzz.R'
+    'extract_polygons_from_roi.R'
 RoxygenNote: 7.2.3
