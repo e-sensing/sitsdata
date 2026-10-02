@@ -1,0 +1,32 @@
+Package: sitsdata
+Type: Package
+Title: Data sets to support examples in sits package
+Version: 1.4
+Date: 2025-09-10
+Authors@R: c(person('Gilberto', 'Camara', role = c('aut', 'cre'), email = 'gilberto.camara@inpe.br'), 
+             person('Rolf', 'Simoes', role = c('aut'), email = 'rolf.simoes@inpe.br'),
+             person('Felipe', 'Carlos', role = c('aut'), email = 'efelipecarlos@gmail.com'),
+             person('Felipe', 'Souza', role = c('aut'), email = 'lipecaso@gmail.com'),
+             person('Pedro', 'Brito', role = c('aut'), email = 'pedro.brito@inpe.br'))
+Maintainer: Gilberto Camara <gilberto.camara@inpe.br>
+Description: This project contains in situ data sets used in the sits package. 
+    These data sets consists of time series of selected locations 
+    which are used to the statistical learning models used 
+    in demos of the sits package. These data sets support the examples of 
+    the on-line book https://e-sensing.github.io/sitsbook/.
+    This version requires sits 1.4.0 or later.
+Depends: R (>= 4.0)
+URL: https://github.com/e-sensing/sitsdata/
+BugReports: https://github.com/e-sensing/sitsdata/issues
+License: GPL-2 | file LICENSE
+Imports: 
+    tibble
+ByteCompile: true
+LazyData: true
+Encoding: UTF-8
+Collate: 
+    'data.R'
+    'zzz.R'
+    'extract_polygons_from_roi.R'
+    'rds_to_parquet.R'
+RoxygenNote: 7.2.3
